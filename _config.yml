@@ -1,1 +1,8 @@
+title: FalconSpy
+description: Blog for FalconSpy
+show_downloads: false
+google_analytics:
 theme: jekyll-theme-hacker
+plugins:
+  - jekyll-feed
+  - jeyll-avatar

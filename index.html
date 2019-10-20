@@ -1,13 +1,16 @@
 ---
-layout: post
-title: Blogging Like a Hacker
+layout: default
+published: true
 ---
 
-<!DOCTYPE html>
-<html>
-<title>FalconSpy</title>
-<body>
-<h1>test</h1>
-<p>I'll make this fancier in the future. Placeholder at this point in time</p>
-</body>
-</html>
+<div class="posts">
+  {% for post in site.posts %}
+  <ul class="task-list">
+      <li class="task-list-item">
+          <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+          <p>{{ post.content | strip_html | truncatewords:50 }}</p>
+      </li>
+  </ul>
+  {% endfor %}
+</div>
