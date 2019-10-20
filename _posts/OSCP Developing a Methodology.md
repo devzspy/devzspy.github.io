@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: "OSCP: Developing a Methodology"
+title: OSCP - Developing a Methodology
 tags:
   - Pentesting
   - OSCP
