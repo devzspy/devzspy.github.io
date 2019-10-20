@@ -1,14 +1,12 @@
-```
 ---
 published: true
 layout: post
-title: HTB - Active
+title: OSCP - Developing a Methodology
 tags:
   - Pentesting
   - OSCP
   - Methodology
 ---
-```
 
 ![img](https://miro.medium.com/max/800/0*VmB04QBkCIh6GqVS.png)
 
