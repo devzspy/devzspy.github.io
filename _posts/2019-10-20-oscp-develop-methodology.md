@@ -8,9 +8,11 @@ tags:
   - Methodology
 ---
 
-![img](https://miro.medium.com/max/800/0*VmB04QBkCIh6GqVS.png)
+<p align="center">
+   <img src="https://miro.medium.com/max/800/0*VmB04QBkCIh6GqVS.png">
+</p>
 
-<p style="text-align: center;">Image owned and created by Offensive Security</p>
+<p align="center">Image owned and created by Offensive Security</p>
 I’ve been asked several times on Discord to create a post regarding my methodology and how to establish one. Mainly the individuals asking me this are new OSCP Students. As such this is primarily targeting the new OSCP students and for those genuinely interested as to my methodology.
 
 **Disclaimer:** This is not the end all be all or the *best* methodology out there.
@@ -23,24 +25,24 @@ There are a number of tools available for taking and storing notes. Note taking 
 
 **CherryTree:** I personally used CherryTree for the lab and exam. Another OSCP student had created a template for CherryTree which I copied to my github which can be found here: [https://github.com/devzspy/oscp-certification/tree/master/Note%20Taking%20Tools/CherryTree%20Template](https://github.com/devzspy/oscp-certification/tree/master/Note Taking Tools/CherryTree Template)
 
-![img](https://miro.medium.com/max/218/0*VYJo_uHSQoEQDcGP.png)
+<p align="center"><img src="https://miro.medium.com/max/218/0*VYJo_uHSQoEQDcGP.png"></p>
 
-<p style="text-align: center;">James Hall’s CherryTree Template</p>
+<p align="center">James Hall’s CherryTree Template</p>
 **Dradis Framework:** Dradis comes installed on Kali by default if I am not mistaken but I am not sure if the OffSec PWK Image has it or not. There is a Dradis OSCP template which can be acquired here https://dradisframework.com/academy/industry/compliance/oscp/.
 
-![img](https://miro.medium.com/max/2000/0*9xW6k7SEzYbTaaL9.png)
+<p align="center"><img src="https://miro.medium.com/max/2000/0*9xW6k7SEzYbTaaL9.png"></p>
 
-<p style="text-align: center;">Dradis Framework</p>
+<p align="center">Dradis Framework</p>
 **Penetration Testing Workshop:** Somewhat similar to the Dradis Framework, this is primarily a website but have since offered paid users an offline version for note taking. The website for this is https://pentest.ws/ and the paid version is about $5/month charged quarterly. However, at the time of this post there is a special for $3.32/month charged quarterly. I used this framework for my time in the Virtual Hacking Labs environment
 
-![img](https://miro.medium.com/max/1918/0*kCzA5RKeZh_ub482.png)
+<p align="center"><img src="https://miro.medium.com/max/1918/0*kCzA5RKeZh_ub482.png"></p>
 
-<p style="text-align: center;">Penetration Testing Workshop Project Dashboard</p>
+<p align="center">Penetration Testing Workshop Project Dashboard</p>
 **SimplE RePort wrIting and COllaboration tool (Serpico):** This isn’t a tool or framework I’ve used so very little experience with it. That being said, Serpico is a penetration testing report generation and collaboration tool. It was developed to cut down on the amount of time it takes to write a penetration testing report. You can get Serpico via https://github.com/SerpicoProject/Serpico
 
-![img](https://miro.medium.com/max/1848/1*rNTEK2OJyk-LTYTrgqW-bw.png)
+<p align="center"><img src="https://miro.medium.com/max/1848/1*rNTEK2OJyk-LTYTrgqW-bw.png"></p>
 
-<p style="text-align: center;">Serpico Dashboard</p>
+<p align="center">Serpico Dashboard</p>
 There are many others like KeepNote (no longer maintained by developer), OneNote, EverNote, Github Markdown, etc.
 
 Feel free to pick whichever framework or note taking tool you feel best suites your needs.
@@ -95,9 +97,9 @@ There are a few tools available that were created by OSCP Students whom now have
 
 AutoRecon is a multi-threaded network reconnaissance tool which performs automated enumeration of services. It is intended as a time-saving tool for use in CTFs and other penetration testing environments (e.g. OSCP). It may also be useful in real-world engagements.
 
-![img](https://miro.medium.com/max/902/0*ZvRh6jzvOle52NJ-)
+<p align="center"><img src="https://miro.medium.com/max/902/0*ZvRh6jzvOle52NJ-"></p>
 
-<p style="text-align: center;">Example of AutoRecon running</p>
+<p align="center">Example of AutoRecon running</p>
 I personally used this tool for the labs and the exam as it was created and released during my trials.
 
 You can acquire this via https://github.com/Tib3rius/AutoRecon.
@@ -226,9 +228,11 @@ There is an updated Python 3 version / shell script version available via https:
 
 **Linux Smart Enumeration:** This tool was created after the developer was inspired by LinEnum previously mentioned. This script is more up to date and just looks cleaner than LinEnum and LinPrivChecker.
 
-![img](https://miro.medium.com/max/649/0*D2txnk1EGX1woJ0Y.png)
+<p align="center">
+  <img src="https://miro.medium.com/max/649/0*D2txnk1EGX1woJ0Y.png">
+</p>
 
-<p style="text-align: center;">Linux Smart Enumeration</p>
+<p align="center">Linux Smart Enumeration</p>
 I personally did not use this script in the labs or the exam but I have used it for Hack The Box.
 
 You can acquire this script via https://github.com/diego-treitos/linux-smart-enumeration
@@ -264,11 +268,9 @@ Somethings to look for via the output of the scripts above:
 
 I would recommend reviewing Sagi Shahar’s Windows / Linux Local Privilege Escalation Workshop.
 
-![img](https://miro.medium.com/max/30/0*3hIwV1Y63LjOWLsQ?q=20)
+<p align="center"><img src="https://miro.medium.com/max/1200/0*3hIwV1Y63LjOWLsQ"></p>
 
-![img](https://miro.medium.com/max/1200/0*3hIwV1Y63LjOWLsQ)
-
-<p style="text-align: center;">Sagi Shahar LPE WorkShop</p>
+<p align="center">Sagi Shahar LPE WorkShop</p>
 There are scripts you can run on a Windows VM/Linux VM you created that will intentionally make it vulnerable to most of the branches in the above screenshot. There are also exercises and tutorials on YouTube for the Windows portion: https://www.youtube.com/playlist?list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP
 
 You can review the workshop, obtain the scripts, and the exercises via https://github.com/sagishahar/lpeworkshop
