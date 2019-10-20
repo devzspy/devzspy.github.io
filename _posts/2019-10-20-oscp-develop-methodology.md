@@ -23,28 +23,20 @@ There are a number of tools available for taking and storing notes. Note taking 
 
 **CherryTree:** I personally used CherryTree for the lab and exam. Another OSCP student had created a template for CherryTree which I copied to my github which can be found here: [https://github.com/devzspy/oscp-certification/tree/master/Note%20Taking%20Tools/CherryTree%20Template](https://github.com/devzspy/oscp-certification/tree/master/Note Taking Tools/CherryTree Template)
 
-![img](https://miro.medium.com/max/11/0*VYJo_uHSQoEQDcGP.png?q=20)
-
 ![img](https://miro.medium.com/max/218/0*VYJo_uHSQoEQDcGP.png)
 
 <p style="text-align: center;">James Hall’s CherryTree Template</p>
 **Dradis Framework:** Dradis comes installed on Kali by default if I am not mistaken but I am not sure if the OffSec PWK Image has it or not. There is a Dradis OSCP template which can be acquired here https://dradisframework.com/academy/industry/compliance/oscp/.
-
-![img](https://miro.medium.com/max/30/0*9xW6k7SEzYbTaaL9.png?q=20)
 
 ![img](https://miro.medium.com/max/2000/0*9xW6k7SEzYbTaaL9.png)
 
 <p style="text-align: center;">Dradis Framework</p>
 **Penetration Testing Workshop:** Somewhat similar to the Dradis Framework, this is primarily a website but have since offered paid users an offline version for note taking. The website for this is https://pentest.ws/ and the paid version is about $5/month charged quarterly. However, at the time of this post there is a special for $3.32/month charged quarterly. I used this framework for my time in the Virtual Hacking Labs environment
 
-![img](https://miro.medium.com/max/30/0*kCzA5RKeZh_ub482.png?q=20)
-
 ![img](https://miro.medium.com/max/1918/0*kCzA5RKeZh_ub482.png)
 
 <p style="text-align: center;">Penetration Testing Workshop Project Dashboard</p>
 **SimplE RePort wrIting and COllaboration tool (Serpico):** This isn’t a tool or framework I’ve used so very little experience with it. That being said, Serpico is a penetration testing report generation and collaboration tool. It was developed to cut down on the amount of time it takes to write a penetration testing report. You can get Serpico via https://github.com/SerpicoProject/Serpico
-
-![img](https://miro.medium.com/max/30/1*rNTEK2OJyk-LTYTrgqW-bw.png?q=20)
 
 ![img](https://miro.medium.com/max/1848/1*rNTEK2OJyk-LTYTrgqW-bw.png)
 
@@ -102,8 +94,6 @@ There are a few tools available that were created by OSCP Students whom now have
 **AutoRecon:** This tools was developed by the Unofficial OffSec PWK Server’s very own Tib3rius. The name of the server has since changed to InfoSec Prep.
 
 AutoRecon is a multi-threaded network reconnaissance tool which performs automated enumeration of services. It is intended as a time-saving tool for use in CTFs and other penetration testing environments (e.g. OSCP). It may also be useful in real-world engagements.
-
-![img](https://miro.medium.com/max/30/0*ZvRh6jzvOle52NJ-?q=20)
 
 ![img](https://miro.medium.com/max/902/0*ZvRh6jzvOle52NJ-)
 
@@ -235,8 +225,6 @@ This does not come standard with Kali or the OffSec PWK Image. You can acquire a
 There is an updated Python 3 version / shell script version available via https://github.com/linted/linuxprivchecker — I recommend using this as it has a server/client model.
 
 **Linux Smart Enumeration:** This tool was created after the developer was inspired by LinEnum previously mentioned. This script is more up to date and just looks cleaner than LinEnum and LinPrivChecker.
-
-![img](https://miro.medium.com/max/18/0*D2txnk1EGX1woJ0Y.png?q=20)
 
 ![img](https://miro.medium.com/max/649/0*D2txnk1EGX1woJ0Y.png)
 
