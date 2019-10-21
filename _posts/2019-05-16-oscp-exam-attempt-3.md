@@ -12,7 +12,7 @@ tags: [Pentesting, Exam]
 
 I *PASSED* my third OSCP exam attempt. This is more just a post detailing my new experiences the third time around.
 
-For those of you first tuning in, should you wish to review my first failed attempt you can do so here: https://www.adamluvshis.com/content/oscp-exam-attempt-1 or review my second failed attempt here: https://www.adamluvshis.com/content/oscp-exam-attempt-2
+For those of you first tuning in, should you wish to review my first failed attempt you can do so here:  https://devzspy.github.io/oscp/2019/02/19/oscp-exam-attempt-1.html or review my second failed attempt here: https://devzspy.github.io/oscp/2019/04/09/oscp-exam-attempt-2.html 
 
 ### Proof of Success
 
@@ -24,7 +24,7 @@ A month after failing my second exam attempt with 55 points, I was determined to
 
 In the end, I managed to acquire 80 points for my third attempt, submit my report and receive a passing grade/report.
 
-In my second post ( https://www.adamluvshis.com/content/oscp-exam-attempt-2 ) I had mentioned I doubt I would receive the same 5 exam machines again. I still hold that doubt but I had 3 of the same hosts as my first exam attempt. So I guess it could happen….
+In my second post ( https://devzspy.github.io/oscp/2019/04/09/oscp-exam-attempt-2.html ) I had mentioned I doubt I would receive the same 5 exam machines again. I still hold that doubt but I had 3 of the same hosts as my first exam attempt. So I guess it could happen….
 
 ### **Practicing More via Virtual Hacking Labs (VHL)**
 
