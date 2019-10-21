@@ -1,6 +1,6 @@
 ---
 published: true
-layout: page
+layout: post
 title: "Virtual Hacking Labs"
 categories: [vhl]
 tags: [Pentesting, VHL, Virtual-Hacking-Labs]
