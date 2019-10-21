@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: OSCP Exam Attempt #1
+title: OSCP Exam Attempt \#1
 tags:
   - Pentesting
   - OSCP
