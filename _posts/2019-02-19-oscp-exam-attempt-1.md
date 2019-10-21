@@ -1,11 +1,9 @@
 ---
 published: true
 layout: post
-title: OSCP Exam Attempt ##1
-tags:
-  - Pentesting
-  - OSCP
-  - Exam
+title: "OSCP Exam Attempt #1"
+categories: [OSCP]
+tags: [Pentesting, Exam]
 ---
 
 ![img](https://cdn-images-1.medium.com/max/800/0*cFufqYlUCHsfS1pI.png)
