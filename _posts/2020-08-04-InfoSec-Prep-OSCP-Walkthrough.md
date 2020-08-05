@@ -5,6 +5,8 @@ tags:
   - oscp
   - vulnhub
   - walkthrough
+categories:
+  - OSCP
 ---
 ## Introduction
 
