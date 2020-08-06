@@ -10,7 +10,7 @@ tags:
   - infosec-prep
 title: 'InfoSec Prep: OSCP Vulnhub Walkthrough'
 ---
-![hunt.png]({{site.baseurl}}/_posts/hunt.png)
+![hunt.png](https://github.com/devzspy/devzspy.github.io/blob/master/_posts/hunt.png)
 
 ## Introduction
 
@@ -37,7 +37,7 @@ In this walkthrough we will cover the intended path and 2 of the 3 unintended pa
 
 Upon booting up our VM you should be presented with a login screen and the IP address of the box. The IP is displayed to make things easier for beginners. Normally during a penetration test, you might have to scan for the target unless you are exclusively told to attack a set of targets.
 
-![bootup.png]({{site.baseurl}}/_posts/bootup.png)
+![bootup.png](https://github.com/devzspy/devzspy.github.io/blob/master/_posts/bootup.png)
 
 So at this point you would kick off your nmap scan with whatever NSE scripts and options you would want to throw at this box.
 
@@ -45,13 +45,13 @@ You'll see it's running a few services. You'll want to check out the web service
 
 Now at this point depending on what nmap NSE scripts you ran, you may already see something interesting. If not then you may have already kicked off some Nikto, gobuster/dirsearch/dirb/dirbuster scans to look for more interesting things. You might have even visited the webpage (which holds a key piece of information): 
 
-![voucher.png]({{site.baseurl}}/_posts/voucher.png)
+![voucher.png](https://github.com/devzspy/devzspy.github.io/blob/master/_posts/voucher.png)
 
 The user to the box is **oscp** per the only hint we gave you for this box.
 
 By now your web based scanning tools should have came back with something interesting. Specifically the **robots.txt** file or maybe it already found the **secret.txt** file. Upon visiting this file you will see a bunch of text which was actually **base64** encoded: 
 
-![b64encode.png]({{site.baseurl}}/_posts/b64encode.png)
+![b64encode.png](https://github.com/devzspy/devzspy.github.io/blob/master/_posts/b64encode.png)
 
 Throw the base64 encoded text through base64 decoder via `cat file.txt | base64 -d` and you'll actually see it's a private key to the **oscp** user: (I chose to just curl it for my below example)
 
@@ -110,11 +110,11 @@ Once you're in the system you'll probably kick off one or many post-exploitation
 
 You might have noticed the permissions on /bin/bash are a bit off. Usually /bin/bash does not have the setuid bit set: 
 
-![bash.png]({{site.baseurl}}/_posts/bash.png)
+![bash.png](https://github.com/devzspy/devzspy.github.io/blob/master/_posts/bash.png)
 
 From here you would simply type `/bin/bash -p` to get root:
 
-![root-intended.png]({{site.baseurl}}/_posts/root-intended.png)
+![root-intended.png](https://github.com/devzspy/devzspy.github.io/blob/master/_posts/root-intended.png)
 
 ## Unintended Privilege Escalation \#1: ip script
 
