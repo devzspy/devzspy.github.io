@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 categories:
   - OSCP
@@ -364,9 +364,3 @@ fix-wordpress  flag.txt       snap
 /mnt/root/root # cat flag.txt
 d73b****SNIP****4538
 ```
-
-
-
-
-
-
