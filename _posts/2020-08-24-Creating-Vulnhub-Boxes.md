@@ -57,7 +57,7 @@ This is the part where you determine how the user is going to get root on your b
 
 Similar to the intended foothold, the skies the limit on methods of privilege escalation. If you need some ideas feel free to check out the right side of this image:
 
-![]({{site.baseurl}}/https://camo.githubusercontent.com/acb487594dbe457b6711a0a70eb545ec828159a8/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f44415a73453256555141415f62705a2e6a7067)
+![](https://camo.githubusercontent.com/acb487594dbe457b6711a0a70eb545ec828159a8/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f44415a73453256555141415f62705a2e6a7067)
 
 ### Rabbit Holes
 
