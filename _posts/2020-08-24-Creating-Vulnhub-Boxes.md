@@ -67,3 +67,17 @@ Depending on your target audience, you can either fill this sucker up with them 
 
 ## Building Our Box
 
+I won't be providing full step by step instructions / screenshots for every step of the creation. For this section, I will be mostly including the important steps.
+
+### Creating the Box
+
+For this, download an image of any Linux OS. I prefer to just use Ubuntu for my boxes but you may use whatever pleases you.
+
+Once you've downloaded the ISO, open VirtualBox adn click on New (see red box). Then enter the name of the machine, the OS type (Linux) and select the flavor of OS from the version drop down
+
+![](https://i.imgur.com/9paGmVX.png)
+
+Go ahead and then allocate the VM some RAM and disk space. Usually giving the VM about 1GB of RAM and 12GB of disk space is more then enough. Seeing as the recommended size is usually around 10GB. 
+
+For the "Hard Disk File" type, I would recommend the VMDK (Virtual Machine Disk) so this could place nicely down the road with VMWare.
+
