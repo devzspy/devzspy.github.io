@@ -19,9 +19,9 @@ You can find it at [Vulnhub](https://vulnhub.com).
 
 There are a few things you should consider before starting the development of your vulnerable box. Think of this like coding. We "pseudocode" our box with the target audience, intended user paths or footholds, intended privilege escalation paths, and finally if you wish to include any rabbit holes. Once we have all of the aforementioned pseudocode down on paper or whichever application for notes, we can start to develop the box.
 
-You'll first want to have some kind of hypervisor. I would recommend [Oracle Virtualbox](https://www.virtualbox.org/) since it's free. It appears VMWare Player, which was free is now VMWare Workstation Player and now requires a license.
+You'll first want to have some kind of hypervisor. I would recommend [Oracle Virtualbox](https://www.virtualbox.org/) since it's free. It appears VMWare Player, which was free is now VMWare Workstation Player. There is a free version for non-enterprise users which is what we are.
 
-If you have VMWare Workstation Pro, ESXi, or Hyper-V they should work also. However, I am mostly going to cover the creation of a VM using Virtualbox
+If you have VMWare Workstation Pro, ESXi, or Hyper-V they should work also. I won't be covering a full VM creation as it's fairly straight forward. I will only provide some concepts that will be useful for when the VM has already been created.
 
 ## Pseudocode
 
@@ -65,19 +65,10 @@ These are intended to be red heirings. They are to steer the attacker of your bo
 
 Depending on your target audience, you can either fill this sucker up with them or have none at all. Again you are the creator.
 
-## Building Our Box
+## Building the Box
 
-I won't be providing full step by step instructions / screenshots for every step of the creation. For this section, I will be mostly including the important steps.
+For this section, I will only be providing general concepts and things you should consider doing for your box once it's booted up.
 
 ### Creating the Box
 
-For this, download an image of any Linux OS. I prefer to just use Ubuntu for my boxes but you may use whatever pleases you.
-
-Once you've downloaded the ISO, open VirtualBox adn click on New (see red box). Then enter the name of the machine, the OS type (Linux) and select the flavor of OS from the version drop down
-
-![](https://i.imgur.com/9paGmVX.png)
-
-Go ahead and then allocate the VM some RAM and disk space. Usually giving the VM about 1GB of RAM and 12GB of disk space is more then enough. Seeing as the recommended size is usually around 10GB. 
-
-For the "Hard Disk File" type, I would recommend the VMDK (Virtual Machine Disk) so this could place nicely down the road with VMWare.
-
+Pick your flavor of Linux OS whether it be CentOS, Ubuntu, Arch, etc. This is what your targets will be attacking. You can pick an old kernel version / old OS version if you wish. I prefer to use the latest and greatest to limit the unintended privilege escalation methods. 
