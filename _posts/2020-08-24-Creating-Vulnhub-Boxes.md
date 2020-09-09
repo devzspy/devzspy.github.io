@@ -69,6 +69,16 @@ Depending on your target audience, you can either fill this sucker up with them 
 
 For this section, I will only be providing general concepts and things you should consider doing for your box once it's booted up.
 
+### Hardware Requirements
+
+You should try to give the VM as little resources as required. Basically, give the VM enough resources to perform the tasks it needs. 
+
+There is no need to give a VM hosting a website 16GB of RAM and 8 cores. 
+
+Start with the least amount of resources and if necessary increase them until the VM is working optimally.
+
+As for the hard disk size, see what the recommended size is and give it +1 GB more just for good measures.
+
 ### Selecting OS
 
 Pick your flavor of Linux OS whether it be CentOS, Ubuntu, Arch, etc. This is what your targets will be attacking. You can pick an old kernel version / old OS version if you wish. I prefer to use the latest and greatest to limit the unintended privilege escalation methods.
@@ -93,4 +103,4 @@ Since I am only covering concepts, just take the pseudocode from before and actu
 
 ## Outro
 
-In closing, when creating a box for Vulnhub, consider your intended audience and tailor the box towards them. This will hopefully provide the most optimal experience for those of your intended audience. 
+In closing, when creating a box for Vulnhub, consider your intended audience and tailor the box towards them. This will hopefully provide the most optimal experience for those of your intended audience.
