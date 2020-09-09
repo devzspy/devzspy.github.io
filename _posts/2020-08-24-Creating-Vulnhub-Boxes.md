@@ -69,6 +69,28 @@ Depending on your target audience, you can either fill this sucker up with them 
 
 For this section, I will only be providing general concepts and things you should consider doing for your box once it's booted up.
 
-### Creating the Box
+### Selecting OS
 
-Pick your flavor of Linux OS whether it be CentOS, Ubuntu, Arch, etc. This is what your targets will be attacking. You can pick an old kernel version / old OS version if you wish. I prefer to use the latest and greatest to limit the unintended privilege escalation methods. 
+Pick your flavor of Linux OS whether it be CentOS, Ubuntu, Arch, etc. This is what your targets will be attacking. You can pick an old kernel version / old OS version if you wish. I prefer to use the latest and greatest to limit the unintended privilege escalation methods.
+
+### Networking
+
+When creating a box there are two preferred network connection types to use in VMWare, Virtualbox, etc. These two preferred network types are: Internal and Host-Only.
+
+**Internal:** Allows two VMs to communicate with one another. The host and internet will not be able to reach the VMs.
+
+**Host-Only:** Allows the host to communicate with the VM and the VM to communicate with other VMs.  This is the preferred network setting type incase you need to use the host for troubleshooting.
+
+See the below graphic for a better breakdown and understanding of the different network setting types.
+
+![](https://i.imgur.com/lFVbZdQ.png)
+
+### Creating Intended Foothold & Privilege Escalation
+
+Once you've got the OS setup & networking setup, this is the part where you would start to deploy the intended paths for initial foothold and privilege escalation.
+
+Since I am only covering concepts, just take the pseudocode from before and actually put it into action. Maybe make things more difficult for the user by removing access to commands like **wget**. Totally up to you on what you wish to do with the box!.
+
+## Outro
+
+In closing, when creating a box for Vulnhub, consider your intended audience and tailor the box towards them. This will hopefully provide the most optimal experience for those of your intended audience. 
