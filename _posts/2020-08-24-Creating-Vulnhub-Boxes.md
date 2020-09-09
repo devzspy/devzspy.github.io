@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: Creating Boxes for Vulnhub
 categories:
