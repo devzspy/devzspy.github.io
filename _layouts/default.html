@@ -109,7 +109,7 @@
             <center>| OSCP | SAFe4 |<br>
             </center>
           </p>
-          <a href="https://devzspy.github.io"> Home
+          <a href="https://falconspy.org"> Home
           </a>
           <a href="https://twitter.com/0xFalconSpy" target="_blank">Twitter
           </a>
@@ -118,8 +118,6 @@
         </div>
       </div>
       <br>
-                     <left><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b7af142c-2e57-4f48-867f-239d4525fa61"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script></left>
-                     <right><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e0a8285b-1d98-4910-b7d5-a62086419e10"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script></right>
     </div>
 
     <div class="container">
@@ -129,13 +127,14 @@
     </div>
 
     {% if site.google_analytics %}
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZ71PPX7RT"></script>
       <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VZ71PPX7RT');
       </script>
     {% endif %}
   </body>
