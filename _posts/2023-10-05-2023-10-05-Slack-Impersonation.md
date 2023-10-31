@@ -11,7 +11,7 @@ tags: [slack, impersonation]
 
 So you want to impersonate someone on Slack? Maybe claim that you've hacked the next Uber?
 
-![Hacked](hacked.png)
+![Hacked](https://raw.githubusercontent.com/devzspy/devzspy.github.io/master/_posts/hacked.png)
 
 To do this some assumptions are made for those looking to follow suit. One major assumption is that you have a C2 agent on the intended victim(s) or were able to steal their Slack cookies. 
 
@@ -64,7 +64,7 @@ Assuming you've done everything correctly the API token will start with `xoxc-`.
 xoxc-6012439741185-5985308520135-REDACTED
 ```
 
-![Curl for API token](curlapi.png)
+![Curl for API token](https://raw.githubusercontent.com/devzspy/devzspy.github.io/master/_posts/curlapi.png)
 
 ## Assembling Our Access
 
@@ -78,15 +78,15 @@ Within that HAR file will contain the WorkSpace, Cookie (`xoxd-..`), and API tok
 
 Open up Ripcord and go to Accounts -> Add Account -> Add Slack Account
 
-![Add Account](account.png)
+![Add Account](https://raw.githubusercontent.com/devzspy/devzspy.github.io/master/_posts/account.png)
 
 Select the **Import from Browser** option
 
-![Import From Browser](importbrowser.png)
+![Import From Browser](https://raw.githubusercontent.com/devzspy/devzspy.github.io/master/_posts/importbrowser.png)
 
 Drop/Browse for the HAR file you modified
 
-![Add HAR](har.png)
+![Add HAR](https://raw.githubusercontent.com/devzspy/devzspy.github.io/master/_posts/har.png)
 
 Regardless of where you copied the original HAR from you'll see some of the old information in there:
 
@@ -102,11 +102,11 @@ Simply right click your new Slack account within Ripcord and hit connect. Enjoy 
 
 ## Slack view
 
-![Slack View](slack.png)
+![Slack View](https://raw.githubusercontent.com/devzspy/devzspy.github.io/master/_posts/slack.png)
 
 ## Ripcord View
 
-![Ripcord View](ripcord.png)
+![Ripcord View](https://raw.githubusercontent.com/devzspy/devzspy.github.io/master/_posts/ripcord.png)
 
 # Credits
 
