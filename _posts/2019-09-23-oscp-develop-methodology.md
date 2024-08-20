@@ -7,7 +7,7 @@ tags: [Pentesting, Methodology]
 ---
 
 <p align="center">
-   <img src="https://miro.medium.com/max/800/0*VmB04QBkCIh6GqVS.png">
+   <img src="https://miro.medium.com/max/800/0*VmB04QBkCIh6GqVS.png" alt="pwk image">
 </p>
 
 <p align="center">Image owned and created by Offensive Security</p>
@@ -23,22 +23,22 @@ There are a number of tools available for taking and storing notes. Note taking 
 
 **CherryTree:** I personally used CherryTree for the lab and exam. Another OSCP student had created a template for CherryTree which I copied to my github which can be found here: [https://github.com/devzspy/oscp-certification/tree/master/Note%20Taking%20Tools/CherryTree%20Template](https://github.com/devzspy/oscp-certification/tree/master/Note Taking Tools/CherryTree Template)
 
-<p align="center"><img src="https://miro.medium.com/max/218/0*VYJo_uHSQoEQDcGP.png"></p>
+<p align="center"><img src="https://miro.medium.com/max/218/0*VYJo_uHSQoEQDcGP.png" alt="cherry tree template"></p>
 
 <p align="center">James Hall’s CherryTree Template</p>
 **Dradis Framework:** Dradis comes installed on Kali by default if I am not mistaken but I am not sure if the OffSec PWK Image has it or not. There is a Dradis OSCP template which can be acquired here https://dradisframework.com/academy/industry/compliance/oscp/.
 
-<p align="center"><img src="https://miro.medium.com/max/2000/0*9xW6k7SEzYbTaaL9.png"></p>
+<p align="center"><img src="https://miro.medium.com/max/2000/0*9xW6k7SEzYbTaaL9.png" alt="dradis framework"></p>
 
 <p align="center">Dradis Framework</p>
 **Penetration Testing Workshop:** Somewhat similar to the Dradis Framework, this is primarily a website but have since offered paid users an offline version for note taking. The website for this is https://pentest.ws/ and the paid version is about $5/month charged quarterly. However, at the time of this post there is a special for $3.32/month charged quarterly. I used this framework for my time in the Virtual Hacking Labs environment
 
-<p align="center"><img src="https://miro.medium.com/max/1918/0*kCzA5RKeZh_ub482.png"></p>
+<p align="center"><img src="https://miro.medium.com/max/1918/0*kCzA5RKeZh_ub482.png" alt="pentest.ws"></p>
 
 <p align="center">Penetration Testing Workshop Project Dashboard</p>
 **SimplE RePort wrIting and COllaboration tool (Serpico):** This isn’t a tool or framework I’ve used so very little experience with it. That being said, Serpico is a penetration testing report generation and collaboration tool. It was developed to cut down on the amount of time it takes to write a penetration testing report. You can get Serpico via https://github.com/SerpicoProject/Serpico
 
-<p align="center"><img src="https://miro.medium.com/max/1848/1*rNTEK2OJyk-LTYTrgqW-bw.png"></p>
+<p align="center"><img src="https://miro.medium.com/max/1848/1*rNTEK2OJyk-LTYTrgqW-bw.png" alt="serpico"></p>
 
 <p align="center">Serpico Dashboard</p>
 There are many others like KeepNote (no longer maintained by developer), OneNote, EverNote, Github Markdown, etc.
@@ -95,7 +95,7 @@ There are a few tools available that were created by OSCP Students whom now have
 
 AutoRecon is a multi-threaded network reconnaissance tool which performs automated enumeration of services. It is intended as a time-saving tool for use in CTFs and other penetration testing environments (e.g. OSCP). It may also be useful in real-world engagements.
 
-<p align="center"><img src="https://miro.medium.com/max/902/0*ZvRh6jzvOle52NJ-"></p>
+<p align="center"><img src="https://miro.medium.com/max/902/0*ZvRh6jzvOle52NJ-" alt="autorecon"></p>
 
 <p align="center">Example of AutoRecon running</p>
 I personally used this tool for the labs and the exam as it was created and released during my trials.
@@ -227,7 +227,7 @@ There is an updated Python 3 version / shell script version available via https:
 **Linux Smart Enumeration:** This tool was created after the developer was inspired by LinEnum previously mentioned. This script is more up to date and just looks cleaner than LinEnum and LinPrivChecker.
 
 <p align="center">
-  <img src="https://miro.medium.com/max/649/0*D2txnk1EGX1woJ0Y.png">
+  <img src="https://miro.medium.com/max/649/0*D2txnk1EGX1woJ0Y.png" alt="linux smart enum">
 </p>
 
 <p align="center">Linux Smart Enumeration</p>
@@ -266,7 +266,7 @@ Somethings to look for via the output of the scripts above:
 
 I would recommend reviewing Sagi Shahar’s Windows / Linux Local Privilege Escalation Workshop.
 
-<p align="center"><img src="https://miro.medium.com/max/1200/0*3hIwV1Y63LjOWLsQ"></p>
+<p align="center"><img src="https://miro.medium.com/max/1200/0*3hIwV1Y63LjOWLsQ" alt="LPE mindmap tree"></p>
 
 <p align="center">Sagi Shahar LPE WorkShop</p>
 There are scripts you can run on a Windows VM/Linux VM you created that will intentionally make it vulnerable to most of the branches in the above screenshot. There are also exercises and tutorials on YouTube for the Windows portion: https://www.youtube.com/playlist?list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP

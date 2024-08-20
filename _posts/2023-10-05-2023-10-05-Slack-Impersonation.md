@@ -111,7 +111,7 @@ Simply right click your new Slack account within Ripcord and hit connect. Enjoy 
 # Credits
 
 * [Cancel](https://cancel.fm/) for developing [Ripcord](https://cancel.fm/ripcord/)
-* [PaperMtn](papermtn.co.uk) for [Retrieving and Using Slack Cookies for Authentication](https://papermtn.co.uk/retrieving-and-using-slack-cookies-for-authentication/)
+* [PaperMtn](https://papermtn.co.uk) for [Retrieving and Using Slack Cookies for Authentication](https://papermtn.co.uk/retrieving-and-using-slack-cookies-for-authentication/)
 * [Dejan Zelic](https://twitter.com/dejandayoff) for being a guinea pig
 * [Topher Timzen](https://twitter.com/ttimzen) for Peer Review & Mentoring
 * [r00tkillah](https://twitter.com/r00tkillah) for Peer Review & Mentoring
