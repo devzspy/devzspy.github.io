@@ -3,7 +3,7 @@ published: true
 layout: post
 title: "OSCP Exam Attempt #1"
 categories: [oscp]
-tags: [Pentesting, Exam]
+tags: [oscp, Pentesting, Exam]
 ---
 
 ![img](https://cdn-images-1.medium.com/max/800/0*cFufqYlUCHsfS1pI.png)

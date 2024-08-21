@@ -3,7 +3,7 @@ published: true
 layout: post
 title: OSCP - Developing a Methodology
 categories: [oscp]
-tags: [Pentesting, Methodology]
+tags: [oscp, Pentesting, Methodology]
 ---
 
 <p align="center">

@@ -3,7 +3,7 @@ published: true
 layout: post
 title: "Useful OSCP Notes & Commands"
 categories: [oscp]
-tags: [Pentesting, Exam]
+tags: [oscp, Pentesting, Exam]
 ---
 
 ![img](https://miro.medium.com/proxy/0*cFufqYlUCHsfS1pI.png)
