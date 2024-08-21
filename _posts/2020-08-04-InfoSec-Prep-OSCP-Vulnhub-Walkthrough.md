@@ -2,7 +2,7 @@
 published: true
 layout: post
 categories:
-  - OSCP
+  - oscp
 tags:
   - walkthrough
   - vulnhub

@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: OSCP - Developing a Methodology
-categories: [OSCP]
+categories: [oscp]
 tags: [Pentesting, Methodology]
 ---
 

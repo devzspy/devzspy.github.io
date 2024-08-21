@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: "OSCP Exam Attempt #2"
-categories: [OSCP]
+categories: [oscp]
 tags: [Pentesting, Exam]
 ---
 

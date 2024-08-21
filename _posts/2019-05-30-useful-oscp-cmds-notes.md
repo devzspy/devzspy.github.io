@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: "Useful OSCP Notes & Commands"
-categories: [OSCP]
+categories: [oscp]
 tags: [Pentesting, Exam]
 ---
 
