@@ -19,9 +19,9 @@ I should note this was for OSCP/PWK v2. The course was recently updated to v3 in
 
 You can read my take-aways and experiences per attempt via:
 
-* [OSCP Exam Attempt #1](https://falconspy.org/oscp/2019/02/19/oscp-exam-attempt-1.html)
-* [OSCP Exam Attempt #2](https://falconspy.org/oscp/2019/04/09/oscp-exam-attempt-2.html)
-* [OSCP Exam Attempt #3](https://falconspy.org/oscp/2019/05/16/oscp-exam-attempt-3.html)
+* [OSCP Exam Attempt #1](https://falconspy.org/posts/oscp-exam-attempt-1/)
+* [OSCP Exam Attempt #2](https://falconspy.org/posts/oscp-exam-attempt-2/)
+* [OSCP Exam Attempt #3](https://falconspy.org/posts/oscp-exam-attempt-3/)
 
 ## Struggle is Real
 
