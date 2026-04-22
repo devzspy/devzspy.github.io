@@ -25,24 +25,51 @@ order: 5
   object-fit: cover;
   aspect-ratio: 1 / 1;
 }
+.pub-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+@media (min-width: 768px) {
+  .pub-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.pub-grid > .col {
+  padding: 0;
+}
+.pub-toc .btn {
+  color: #1db954;
+  border-color: #1db954;
+}
+.pub-toc .btn:hover {
+  color: #fff;
+  background-color: #1db954;
+  border-color: #1db954;
+}
+.pub-toc .badge {
+  background-color: #1db954 !important;
+  color: #fff;
+}
 </style>
 
-<div class="d-flex flex-wrap gap-2 align-items-center mb-4">
+<div class="pub-toc d-flex flex-wrap gap-2 align-items-center mb-4">
   <span class="text-muted me-1"><small>Jump to:</small></span>
-  <a href="#cube-talks" class="btn btn-sm btn-outline-success">
-    Weekly Cube Talks <span class="badge bg-success ms-1">56</span>
+  <a href="#cube-talks" class="btn btn-sm">
+    Weekly Cube Talks <span class="badge ms-1">56</span>
   </a>
-  <a href="#cube-cast" class="btn btn-sm btn-outline-success">
-    Cube Cast <span class="badge bg-success ms-1">7</span>
+  <a href="#cube-cast" class="btn btn-sm">
+    Cube Cast <span class="badge ms-1">7</span>
   </a>
-  <a href="#offsec" class="btn btn-sm btn-outline-success">
-    OffSec Podcast <span class="badge bg-success ms-1">9</span>
+  <a href="#offsec" class="btn btn-sm">
+    OffSec Podcast <span class="badge ms-1">9</span>
   </a>
 </div>
 
 <h2 id="cube-talks">Weekly Hack The Box: Cube Talks Episodes</h2>
 
-<div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+<div class="pub-grid">
 
   <div class="col">
     <div class="card h-100 pub-card">
@@ -944,7 +971,7 @@ order: 5
 
 <h2 id="cube-cast">Hack The Box: Cube Cast Episodes</h2>
 
-<div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+<div class="pub-grid">
 
   <div class="col">
     <div class="card h-100 pub-card">
@@ -1062,7 +1089,7 @@ order: 5
 
 <h2 id="offsec">The Official OffSec Podcast Episodes</h2>
 
-<div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+<div class="pub-grid">
 
   <div class="col">
     <div class="card h-100 pub-card">
