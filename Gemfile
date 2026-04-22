@@ -8,6 +8,9 @@ group :test do
   gem "html-proofer", "~> 5.0"
 end
 
+gem "tzinfo", ">= 1", "< 3"
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
 gem "jekyll-feed"
 gem "jekyll-avatar"
 gem "jekyll-seo-tag"
