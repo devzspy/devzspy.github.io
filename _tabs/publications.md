@@ -39,6 +39,16 @@ order: 5
 .pub-grid > .col {
   padding: 0;
 }
+.pub-card .btn-success {
+  background-color: #1db954;
+  border-color: #1db954;
+  color: #fff;
+}
+.pub-card .btn-success:hover {
+  background-color: #17a349;
+  border-color: #17a349;
+  color: #fff;
+}
 .pub-toc .btn {
   color: #1db954;
   border-color: #1db954;
