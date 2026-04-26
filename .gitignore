@@ -27,3 +27,6 @@ assets/js/dist
 
 # Claude Stuff
 .claude/
+
+# Post templates
+_posts/TEMPLATE-*.md
