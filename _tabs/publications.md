@@ -60,6 +60,7 @@ order: 5
 }
 .pub-toc .badge {
   background-color: #1db954 !important;
+  border-radius: 50rem !important;
   color: #fff;
 }
 </style>
@@ -67,7 +68,7 @@ order: 5
 <div class="pub-toc d-flex flex-wrap gap-2 align-items-center mb-4">
   <span class="text-muted me-1"><small>Jump to:</small></span>
   <a href="#cube-talks" class="btn btn-sm">
-    Weekly Cube Talks <span class="badge ms-1">56</span>
+    Weekly Cube Talks <span class="badge ms-1">57</span>
   </a>
   <a href="#cube-cast" class="btn btn-sm">
     Cube Cast <span class="badge ms-1">7</span>
@@ -75,11 +76,30 @@ order: 5
   <a href="#offsec" class="btn btn-sm">
     OffSec Podcast <span class="badge ms-1">9</span>
   </a>
+  <a href="#infosec-prep" class="btn btn-sm">
+    InfoSec Prep <span class="badge ms-1">5</span>
+  </a>
 </div>
 
 <h2 id="cube-talks">Weekly Hack The Box: Cube Talks Episodes</h2>
 
 <div class="pub-grid">
+
+  <div class="col">
+    <div class="card h-100 pub-card">
+      <img src="/assets/images/podcasts/cubetalks.jpg" class="card-img-top" alt="Cube Talks April 24 2026">
+      <div class="card-body">
+        <h6 class="card-subtitle text-muted mb-2">APR 24, 2026 &middot; Hack The Box: Cube Talks</h6>
+        <h5 class="card-title">Cube Talks: April 24th, 2026</h5>
+        <p class="card-text">Various special guests join to discuss the XP/ranking system, AI, and more community topics.</p>
+      </div>
+      <div class="card-footer border-0 bg-transparent pt-0">
+        <a href="https://creators.spotify.com/pod/profile/hack-the-box-cube-talks/episodes/Cube-Talks-April-24th--2026-e3ifk41" target="_blank" rel="noopener" class="btn btn-sm btn-success">
+          <i class="fab fa-spotify me-1"></i>Listen on Spotify
+        </a>
+      </div>
+    </div>
+  </div>
 
   <div class="col">
     <div class="card h-100 pub-card">
@@ -1239,6 +1259,92 @@ order: 5
       </div>
       <div class="card-footer border-0 bg-transparent pt-0">
         <a href="https://open.spotify.com/episode/0PzhikRVpfBpzrZV67xFcE" target="_blank" rel="noopener" class="btn btn-sm btn-success">
+          <i class="fab fa-spotify me-1"></i>Listen on Spotify
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<h2 id="infosec-prep">InfoSec Prep Podcast Episodes</h2>
+
+<div class="pub-grid">
+
+  <div class="col">
+    <div class="card h-100 pub-card">
+      <img src="/assets/images/podcasts/infosecprep.jpg" class="card-img-top" alt="InfoSec Prep 0x08">
+      <div class="card-body">
+        <h6 class="card-subtitle text-muted mb-2">DEC 14, 2021 &middot; InfoSec Prep</h6>
+        <h5 class="card-title">0x08: OSCP Exam Changes</h5>
+        <p class="card-text">Discussion with OffSec reps and community experts on recent OSCP exam changes, rationale, timeline, and permitted tools.</p>
+      </div>
+      <div class="card-footer border-0 bg-transparent pt-0">
+        <a href="https://open.spotify.com/episode/3n8VwbSX5Jc0j7906DSITt" target="_blank" rel="noopener" class="btn btn-sm btn-success">
+          <i class="fab fa-spotify me-1"></i>Listen on Spotify
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100 pub-card">
+      <img src="/assets/images/podcasts/infosecprep.jpg" class="card-img-top" alt="InfoSec Prep 0x07">
+      <div class="card-body">
+        <h6 class="card-subtitle text-muted mb-2">AUG 23, 2021 &middot; InfoSec Prep</h6>
+        <h5 class="card-title">0x07: OSCE AMA</h5>
+        <p class="card-text">OSCE holders answer community questions live from the InfoSec Prep Discord server.</p>
+      </div>
+      <div class="card-footer border-0 bg-transparent pt-0">
+        <a href="https://open.spotify.com/episode/5caBW0nJwsz7Z0E2Ki7EpI" target="_blank" rel="noopener" class="btn btn-sm btn-success">
+          <i class="fab fa-spotify me-1"></i>Listen on Spotify
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100 pub-card">
+      <img src="/assets/images/podcasts/infosecprep.jpg" class="card-img-top" alt="InfoSec Prep 0x05">
+      <div class="card-body">
+        <h6 class="card-subtitle text-muted mb-2">APR 24, 2021 &middot; InfoSec Prep</h6>
+        <h5 class="card-title">0x05: Bishop Fox AMA</h5>
+        <p class="card-text">Penetration testing professionals from Bishop Fox answer community questions from the InfoSec Prep Discord server.</p>
+      </div>
+      <div class="card-footer border-0 bg-transparent pt-0">
+        <a href="https://open.spotify.com/episode/7K0sKPcARvsLJ0WyPCGqGQ" target="_blank" rel="noopener" class="btn btn-sm btn-success">
+          <i class="fab fa-spotify me-1"></i>Listen on Spotify
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100 pub-card">
+      <img src="/assets/images/podcasts/infosecprep.jpg" class="card-img-top" alt="InfoSec Prep 0x04">
+      <div class="card-body">
+        <h6 class="card-subtitle text-muted mb-2">FEB 06, 2021 &middot; InfoSec Prep</h6>
+        <h5 class="card-title">0x04: eLearnSecurity / INE Staff AMA</h5>
+        <p class="card-text">Q&A with eLearnSecurity and INE staff Don and lilc on certifications, courses, and breaking into InfoSec.</p>
+      </div>
+      <div class="card-footer border-0 bg-transparent pt-0">
+        <a href="https://open.spotify.com/episode/4JjRfh4VjIOcDvFEDi0Ojl" target="_blank" rel="noopener" class="btn btn-sm btn-success">
+          <i class="fab fa-spotify me-1"></i>Listen on Spotify
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100 pub-card">
+      <img src="/assets/images/podcasts/infosecprep.jpg" class="card-img-top" alt="InfoSec Prep 0x03">
+      <div class="card-body">
+        <h6 class="card-subtitle text-muted mb-2">DEC 07, 2020 &middot; InfoSec Prep</h6>
+        <h5 class="card-title">0x03: byt3bl33d3r AMA</h5>
+        <p class="card-text">Interactive session with the creator of CrackMapExec, hosted live on the InfoSec Prep Discord server.</p>
+      </div>
+      <div class="card-footer border-0 bg-transparent pt-0">
+        <a href="https://open.spotify.com/episode/2caoyg0HpTMXy5eGqN0J9S" target="_blank" rel="noopener" class="btn btn-sm btn-success">
           <i class="fab fa-spotify me-1"></i>Listen on Spotify
         </a>
       </div>
