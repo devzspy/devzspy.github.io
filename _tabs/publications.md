@@ -58,26 +58,35 @@ order: 5
   background-color: #1db954;
   border-color: #1db954;
 }
-.pub-toc .badge {
-  background-color: #1db954 !important;
-  border-radius: 50rem !important;
+.pub-toc .ep-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1db954;
   color: #fff;
+  border-radius: 50rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2em 0.55em;
+  margin-left: 0.25rem;
+  line-height: 1;
+  min-width: 1.5em;
 }
 </style>
 
 <div class="pub-toc d-flex flex-wrap gap-2 align-items-center mb-4">
   <span class="text-muted me-1"><small>Jump to:</small></span>
   <a href="#cube-talks" class="btn btn-sm">
-    Weekly Cube Talks <span class="badge ms-1">57</span>
+    Weekly Cube Talks <span class="ep-count">57</span>
   </a>
   <a href="#cube-cast" class="btn btn-sm">
-    Cube Cast <span class="badge ms-1">7</span>
+    Cube Cast <span class="ep-count">7</span>
   </a>
   <a href="#offsec" class="btn btn-sm">
-    OffSec Podcast <span class="badge ms-1">9</span>
+    OffSec Podcast <span class="ep-count">9</span>
   </a>
   <a href="#infosec-prep" class="btn btn-sm">
-    InfoSec Prep <span class="badge ms-1">5</span>
+    InfoSec Prep <span class="ep-count">5</span>
   </a>
 </div>
 
