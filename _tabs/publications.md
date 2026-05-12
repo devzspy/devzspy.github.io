@@ -103,7 +103,7 @@ order: 5
         <p class="card-text">Session discussing AI's impact on security, red teaming vs penetration testing, Dirty Frag vulnerability, and career advice for cybersecurity professionals.</p>
       </div>
       <div class="card-footer border-0 bg-transparent pt-0">
-        <a href="https://creators.spotify.com/pod/profile/hack-the-box/episodes/Cube-Talks-May-8th--2026-e3j7egh" target="_blank" rel="noopener" class="btn btn-sm btn-success">
+        <a href="https://creators.spotify.com/pod/profile/hack-the-box-cube-talks/episodes/Cube-Talks-May-8th--2026-e3j917q" target="_blank" rel="noopener" class="btn btn-sm btn-success">
           <i class="fab fa-spotify me-1"></i>Listen on Spotify
         </a>
       </div>
