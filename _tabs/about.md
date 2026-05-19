@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-My name is Adam and I have been a Security Engineer with over 9+ years of experience in the Cyber Security field.
+My name is Adam and I have been a Security Engineer with over 7+ years of experience in the Cyber Security field.
 
 Initially I wanted to be a developer/programmer and follow in the footsteps of my father. Upon attending my first year at Rochester Institute of Technology (RIT) I realized that programming day in and day out was not something I particularly enjoyed. 
 
