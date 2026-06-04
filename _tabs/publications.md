@@ -77,7 +77,7 @@ order: 5
 <div class="pub-toc d-flex flex-wrap gap-2 align-items-center mb-4">
   <span class="text-muted me-1"><small>Jump to:</small></span>
   <a href="#cube-talks" class="btn btn-sm">
-    Weekly Cube Talks <span class="ep-count">60</span>
+    Weekly Cube Talks <span class="ep-count">61</span>
   </a>
   <a href="#cube-cast" class="btn btn-sm">
     Cube Cast <span class="ep-count">7</span>
@@ -93,6 +93,22 @@ order: 5
 <h2 id="cube-talks">Weekly Hack The Box: Cube Talks Episodes</h2>
 
 <div class="pub-grid">
+
+  <div class="col">
+    <div class="card h-100 pub-card">
+      <img src="/assets/images/podcasts/cubetalks.jpg" class="card-img-top" alt="Cube Talks May 29 2026">
+      <div class="card-body">
+        <h6 class="card-subtitle text-muted mb-2">MAY 29, 2026 &middot; Hack The Box: Cube Talks</h6>
+        <h5 class="card-title">Cube Talks: May 29th, 2026</h5>
+        <p class="card-text">Panelists discuss cybersecurity topics, Hack the Box resources, malware dev, AI tools, career advice, resume gaps, and cloud engineering.</p>
+      </div>
+      <div class="card-footer border-0 bg-transparent pt-0">
+        <a href="https://open.spotify.com/episode/4JoZpabCkHCSkQ2ERerFvh" target="_blank" rel="noopener" class="btn btn-sm btn-success">
+          <i class="fab fa-spotify me-1"></i>Listen on Spotify
+        </a>
+      </div>
+    </div>
+  </div>
 
   <div class="col">
     <div class="card h-100 pub-card">
